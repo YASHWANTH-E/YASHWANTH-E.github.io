@@ -188,12 +188,15 @@
    */
   new Swiper('.photography-slider', {
     speed: 600,
-    loop: true,
+    rewind: true,
+    observer: true,
+    observeParents: true,
+    watchOverflow: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false
     },
-    slidesPerView: 'auto',
+    slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
       el: '.photography-slider .swiper-pagination',
