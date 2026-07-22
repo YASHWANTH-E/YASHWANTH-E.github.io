@@ -193,7 +193,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -265,7 +265,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -543,6 +543,70 @@ section .container {
 
 .interests .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
+}
+
+/*--------------------------------------------------------------
+# Photography
+--------------------------------------------------------------*/
+.photography .photography-slider {
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+.photography .swiper-slide {
+  height: auto;
+}
+
+.photography .photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.photography .photo-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.photography .photo-item:hover img {
+  transform: scale(1.1);
+}
+
+.photography .photo-item .photo-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.photography .photo-item .photo-overlay i {
+  font-size: 32px;
+}
+
+.photography .photo-item:hover .photo-overlay {
+  opacity: 1;
+}
+
+.photography .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.photography .swiper-pagination .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.photography .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #18d26e;
 }
 
 /*--------------------------------------------------------------
